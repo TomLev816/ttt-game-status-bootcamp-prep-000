@@ -24,13 +24,10 @@ def won?(board)
 
     if board[win1] == "X" && board[win2] == "X" && board[win3] == "X"
       return winner
-    else
-      return nil
     end
     if board[win1] == "O" && board[win2] == "O" && board[win3] == "O"
       return winner
-    else
-      return nil
     end
+  return false
   }
 end
