@@ -26,10 +26,11 @@ def won?(board)
       return winner
     end
   end
+  return false
 end
 
 def full?(board)
-  board.all?{|token| token == "X" || token == "O"}
+  board.all?{|spot| spot == "X" || spot == "O"}
 end
 
 def draw?(board)
