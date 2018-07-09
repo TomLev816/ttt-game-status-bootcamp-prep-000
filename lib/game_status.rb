@@ -16,5 +16,15 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each { |combo| puts "#{combo}"  }
+  WIN_COMBINATIONS.each { |combo| 
+    win1 = combo[0]
+    win2 = combo[1]
+    win3 = combo[2]
+
+    if board[win1] == "X" && board[win2] == "X" && board[win3] == "XX"
+      return combo
+    end
+  }
 end
+
+won?(board)
