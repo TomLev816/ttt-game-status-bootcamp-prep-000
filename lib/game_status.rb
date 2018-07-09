@@ -15,6 +15,6 @@ WIN_COMBINATIONS = [
   [2,5,8]
 ]
 
-def won?
-
+def won?(board)
+  WIN_COMBINATIONS.each { |combo| puts (combo)  }
 end
