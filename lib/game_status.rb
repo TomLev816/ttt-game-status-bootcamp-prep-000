@@ -28,6 +28,6 @@ def won?(board)
     if board[win1] == "O" && board[win2] == "O" && board[win3] == "O"
       return winner
     end
-  return false
+    return false
   }
 end
