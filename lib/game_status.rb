@@ -21,11 +21,11 @@ def won?(board)
 
     if board[winner[0]] == "X" && board[winner[1]] == "X" && board[winner[2]] == "X"
       return winner
-    else return nil
+    else nil
     end
     if board[winner[0]] == "O" && board[winner[1]] == "O" && board[winner[2]] == "O"
       return winner
-    else return nil
+    else nil
     end
   end
 end
